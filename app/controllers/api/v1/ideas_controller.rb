@@ -21,7 +21,7 @@ module Api::V1
       if @idea.destroy
         head :no_content, status: :ok
       else
-        render json: @idea.errors, status: :unprcessable_entity
+        render json: @idea.errors, status: :unprocessable_entity
       end
     end
 
